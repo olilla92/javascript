@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript_feladatok_script.js" defer></script>
+    <link rel="stylesheet" href="javascript_feladatok_css.css">
+    <title>Javascript ismétlés</title>
+</head>
+<body>
+    <!--1. feladat: kocka felszíne és térfogata-->
+    <h2>1. feladat: Felszín és térfogat számítás</h2>
+    <div>
+        a oldal hossza: <input type="number" id="a"><br>
+        b oldal hossza: <input type="number" id="b"><br>
+        c oldal hossza: <input type="number" id="c"><br>
+        <input type="submit" value="Eredmény" onclick="szamolas()">
+    </div>
+    <p id="hiba"></p>
+    <p id="f_e"></p>
+    <p id="t_e"></p>
+
+    <!--2. feladat: időpont kiíratása-->
+    <h2>2. feladat: Időpont kiíratása</h2>
+    <div>
+        <p>Óra: 14<br>Perc: 34<br>Másodperc: 42</p>
+        <input type="submit" value="Az idő másodpercekben" onclick="idok()">
+    </div>
+    <p id="mspercek"></p>
+
+    <!--3. feladat: testtömeg index -->
+    <h2>3. feladat: Testtömeg index</h2>
+    <div>
+        <p>Testtömeg kg-ban: 81.2 kg <br>
+        Magasság cm-ben: 1.78 cm</p>
+        <input type="submit" value="Számolás" onclick="testszamolas()">
+    </div>
+    <p id="tomegindex"></p>
+
+    <!--4. feladat: Osztályzat kiszámító-->
+    <h2>4. feladat: Osztályzat kiszámítása</h2>
+    <div>
+        A jegy százalékos eredménye: <input type="number" id="jegy_szazalek"> %<br>
+        <input type="submit" value="Értékelés" onclick="ertekeles()">
+    </div>
+    <p id="hiba4"></p>
+    <p id="jegy"></p>
+
+    <!--5. feladat: Szökőévek-->
+    <h2>5. feladat: Szökőévek</h2>
+    <div>
+        Adjon meg egy évszámot: <input type="number" id="ev"><br>
+        <input type="submit" value="Számítás" onclick="szokoeve()">
+    </div>
+    <p id="hiba5"></p>
+    <p id="ev_eredmeny"></p>
+
+    <!--6. feladat: Kő, papír, olló-->
+    <h2>6. feladat: Kő, papír, olló</h2>
+    <div>
+        <p>Kő = 1, papír = 2, olló = 3</p><br>
+        <input type="number" id="kpo"><br>
+        <input type="submit" value="Nyertes" onclick="nyertes()">
+    </div>
+    <p id="hiba6"></p>
+    <p id="nyertes_eredmenye"></p>
+
+    <!--7. feladat: String darabolás-->
+    <h2>7. feladat: String darabolás</h2>
+    <div>
+        <input type="text" id="szo"><br>
+        <input type="submit" value="Darabolás" onclick="darabolas()">
+    </div>
+    <p id="db_eredmeny"></p>
+
+    <!--8. feladat: faktoriális-->
+    <h2>8. feladat: Faktoriális</h2>
+    <div>
+        Szám megadása 1 és 10 között: <input type="number" id="fakt"><br>
+        <input type="submit" value="Faktoriális" onclick="szam_fakt()">
+    </div>
+    <p id="hiba8"></p>
+    <p id="fakt_eredmeny"></p>
+
+    <!--9. feladat: Átlag-->
+    <h2>9. feladat: Számjegyek átlagszámítása</h2>
+    <div>
+        Adjon meg egy számot! <input type="text" id="bekertszam"><br>
+        <input type="submit" value="Átlag" onclick="atlag()">
+    </div>
+    <p id="atlag_eredmeny"></p>
+
+    <!--10. feladat: Rajzolás-->
+    <h2>10. feladat: Rajzolás</h2>
+    <div>
+        <input type="number" id="meret"><br>
+        <input type="submit" value="Rajzolás" onclick="megrajzol()">
+    </div>
+    <p id="rajz"></p>
+
+    <!--11. feladat: String elemzés-->
+    <h2>11. feladat: String elemzés</h2>
+    <div>
+        Adjon meg egy betűt: <input type="text" id="bekertstring"><br>
+        <input type="submit" value="Elemzés" onclick="elemzes()">
+    </div>
+    <p id="elemzeseredmenye"></p>
+
+    <!--12. feladat: -->
+    <h2>Számok 100-ig hármas felosztásban</h2>
+    <div>
+        <input type="submit" value="A felosztás megmutatása" onclick="mutat()">
+    </div>
+    <p id="megoldas"></p>
+
+    <!--13. feladat: -->
+    <h2>13. feladat: 10 és 30 közötti számok osztói</h2>
+    <div>
+        <input type="submit" value="Osztók" onclick="osztok()">
+    </div>
+    <p id="osztokered"></p>
+
+    <!--14. feladat: Fizzbuzz-->
+    <h2>14. feladat: Fizzbuzz</h2>
+    <div>
+        <p>Számsor: </p><br>
+        <input type="submit" value="Számsor" onclick="szamsor()">
+    </div>
+    <p id="szamsor_eredm"></p>
+
+</body>
+</html>
